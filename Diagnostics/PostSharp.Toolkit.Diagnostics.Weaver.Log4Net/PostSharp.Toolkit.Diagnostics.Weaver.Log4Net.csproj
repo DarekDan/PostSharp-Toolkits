@@ -40,14 +40,11 @@
       <HintPath>..\..\..\PostSharp-2.1\Build\bin\Debug\PostSharp.dll</HintPath>
     </Reference>
     <Reference Include="PostSharp.Sdk">
-      <HintPath>..\..\..\PostSharp-2.1\Build\bin\Debug\PostSharp.Sdk.dll</HintPath>
+      <HintPath>..\..\Sdk\PostSharp.Sdk.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\AssemblyVersion.cs">
-      <Link>Properties\AssemblyVersion.cs</Link>
-    </Compile>
     <Compile Include="..\..\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
