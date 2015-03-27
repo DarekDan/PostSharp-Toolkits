@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostSharp.Toolkit.Diagnostics.Weaver", "Diagnostics\PostSharp.Toolkit.Diagnostics.Weaver\PostSharp.Toolkit.Diagnostics.Weaver.csproj", "{BD4BCA33-49D2-48AB-BC5A-E50A07C90576}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostSharp.Toolkit.Tests", "Tests\PostSharp.Toolkit.Tests\PostSharp.Toolkit.Tests.csproj", "{6A747DDC-F969-4BF7-8925-10A7E9CA3FFF}"
@@ -18,6 +20,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostSharp.Toolkit.Tests.NLog", "Tests\PostSharp.Toolkit.Tests.NLog\PostSharp.Toolkit.Tests.NLog.csproj", "{86F4EB82-8730-413A-BF44-9E09E1107B62}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAssembly", "Tests\TestAssembly\TestAssembly.csproj", "{315DB367-6AB0-4D92-8CD8-4269C1321CAE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD4BCA33-49D2-48AB-BC5A-E50A07C90576} = {BD4BCA33-49D2-48AB-BC5A-E50A07C90576}
+		{1A587F50-8933-4F6B-9EE9-E68504210FA0} = {1A587F50-8933-4F6B-9EE9-E68504210FA0}
+		{6CB43E63-09FB-4317-90AF-536D16833942} = {6CB43E63-09FB-4317-90AF-536D16833942}
+		{19C7E7BD-4C68-4796-97ED-24E6CEFD95B0} = {19C7E7BD-4C68-4796-97ED-24E6CEFD95B0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostSharp.Toolkit.Diagnostics.Weaver.Log4Net", "Diagnostics\PostSharp.Toolkit.Diagnostics.Weaver.Log4Net\PostSharp.Toolkit.Diagnostics.Weaver.Log4Net.csproj", "{6CB43E63-09FB-4317-90AF-536D16833942}"
 EndProject

@@ -116,7 +116,12 @@ namespace PostSharp.Toolkit.Diagnostics.Weaver.Logging
                     builder.EmitWrite(writer, block, "An exception occurred:\n{0}", 1, logSeverity,
                                       w => w.EmitInstructionLocalVariable(OpCodeNumber.Stloc, exceptionLocal),
                                       (i, w) => w.EmitInstructionLocalVariable(OpCodeNumber.Ldloc, exceptionLocal));
+                    
+                    //writer.EmitInstruction(OpCodeNumber.Rethrow);
+                    writer.DetachInstructionSequence();
 
+                    InstructionSequence rethrowSequence = block.AddInstructionSequence(null, NodePosition.After, null);
+                    writer.AttachInstructionSequence(rethrowSequence);
                     writer.EmitInstruction(OpCodeNumber.Rethrow);
                     writer.DetachInstructionSequence();
                 }
