@@ -12,6 +12,7 @@
     <XmlMulticast />
   </Tasks>
   <Data Name="XmlMulticast">
+    <LogAttribute xmlns="clr-namespace:PostSharp.Toolkit.Diagnostics;assembly:PostSharp.Toolkit.Diagnostics"  />
     <LogAttribute xmlns="clr-namespace:PostSharp.Toolkit.Diagnostics;assembly:PostSharp.Toolkit.Diagnostics" AttributeTargetAssemblies = "TestAssembly" />
   </Data>
 

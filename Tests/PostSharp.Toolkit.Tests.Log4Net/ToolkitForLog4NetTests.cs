@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using TestAssembly;
 using log4net.Config;
+using System.Xml;
 
 namespace PostSharp.Toolkit.Tests.Log4Net
 {
@@ -57,5 +58,6 @@ namespace PostSharp.Toolkit.Tests.Log4Net
             string output = OutputString.ToString();
             StringAssert.Contains("An exception occurred:\nSystem.Exception", output);
         }
+
     }
 }
